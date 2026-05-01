@@ -1,19 +1,28 @@
 # Diabetes Progression Predictor
 
-This project trains a regression model to predict diabetes disease progression from patient measurements.
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-Ridge%20Regression-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+![Task](https://img.shields.io/badge/Task-Regression-2E8B57?style=flat-square)
+
+## Project Summary
+
+This project trains a regression model to predict a numeric diabetes disease progression score from patient measurements.
 
 ## Dataset
 
 The project uses the built-in Diabetes dataset from scikit-learn.
 
-The target is a numeric disease progression score.
+| Type | Details |
+|---|---|
+| Dataset | Diabetes |
+| Source | Built into scikit-learn |
+| Target | Numeric disease progression score |
 
-## Model
+## Model Pipeline
 
-The model uses:
-
-1. `StandardScaler`
-2. `Ridge` regression
+```text
+StandardScaler -> Ridge Regression
+```
 
 ## How To Run
 
@@ -37,11 +46,11 @@ It saves:
 diabetes_regression_model.joblib
 ```
 
-## What You Learn
+## What This Shows On GitHub
 
-- Regression
+- Regression workflow
 - Numeric prediction
-- MAE, RMSE, and R2
+- MAE, RMSE, and R2 evaluation
 - Ridge Regression
 - Saving regression models
 

@@ -1,30 +1,37 @@
 # Customer Churn Predictor
 
-This project trains a binary classification model to predict whether a customer is likely to leave a service.
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-Random%20Forest-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+![Task](https://img.shields.io/badge/Task-Business%20Classification-2E8B57?style=flat-square)
+
+## Project Summary
+
+This project trains a binary classification model to predict whether a customer is likely to leave a service. It uses a synthetic customer dataset, which makes it useful for practicing business-style Machine Learning without needing private company data.
 
 ## Dataset
 
-This project creates a synthetic customer dataset using scikit-learn. It is useful for practice when you do not have a real business dataset yet.
+The dataset is generated with scikit-learn and includes practical customer behavior features.
 
-Example features:
-
-- Tenure
-- Monthly charges
-- Support calls
-- Contract score
-- Usage score
+| Feature | Meaning |
+|---|---|
+| `tenure_months` | How long the customer has stayed |
+| `monthly_charges` | Current monthly billing amount |
+| `support_calls` | Support interaction signal |
+| `contract_score` | Contract strength signal |
+| `usage_score` | Product usage signal |
 
 Target:
 
-- `0`: customer stays
-- `1`: customer churns
+```text
+0 = customer stays
+1 = customer churns
+```
 
-## Model
+## Model Pipeline
 
-The model uses:
-
-1. `StandardScaler`
-2. `RandomForestClassifier`
+```text
+StandardScaler -> RandomForestClassifier
+```
 
 ## How To Run
 
@@ -36,13 +43,13 @@ python predict.py
 
 ## Output
 
-Training prints accuracy and classification report, then saves:
+Training prints accuracy and a classification report, then saves:
 
 ```text
 customer_churn_model.joblib
 ```
 
-## What You Learn
+## What This Shows On GitHub
 
 - Business classification problem
 - Synthetic data generation

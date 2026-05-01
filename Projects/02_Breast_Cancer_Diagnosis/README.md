@@ -1,23 +1,28 @@
 # Breast Cancer Diagnosis Classifier
 
-This project trains a binary classification model to predict whether a breast cancer tumor is malignant or benign.
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-Logistic%20Regression-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+![Task](https://img.shields.io/badge/Task-Binary%20Classification-2E8B57?style=flat-square)
+
+## Project Summary
+
+This project trains a binary classification model to predict whether a tumor is malignant or benign using the Breast Cancer Wisconsin dataset from scikit-learn.
 
 ## Dataset
 
-The project uses the built-in Breast Cancer Wisconsin dataset from scikit-learn.
+The dataset contains numeric measurements from cell nuclei, including radius, texture, perimeter, area, smoothness, and compactness.
 
-The dataset contains numeric measurements from cell nuclei, such as radius, texture, perimeter, area, smoothness, and compactness.
+| Type | Details |
+|---|---|
+| Dataset | Breast Cancer Wisconsin |
+| Source | Built into scikit-learn |
+| Target | Malignant or benign |
 
-## Model
+## Model Pipeline
 
-The model uses:
-
-1. `StandardScaler`
-2. `LogisticRegression`
-
-## Why This Project Matters
-
-This is a common beginner healthcare-style ML problem. It teaches why precision, recall, and F1 score can matter more than only accuracy.
+```text
+StandardScaler -> LogisticRegression
+```
 
 ## How To Run
 
@@ -35,11 +40,11 @@ Training prints accuracy and a classification report, then saves:
 breast_cancer_model.joblib
 ```
 
-## What You Learn
+## What This Shows On GitHub
 
 - Binary classification
 - Healthcare-style evaluation
-- Precision and recall
+- Precision, recall, and F1 score
 - Model pipelines
 - Saving models with joblib
 
