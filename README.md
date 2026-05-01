@@ -1,88 +1,26 @@
-# Iris Flower Machine Learning Classifier
+# ML First Project
 
-A beginner-friendly Machine Learning project that trains a model to classify Iris flowers.
+This repository contains beginner-friendly Machine Learning projects with clear code, simple datasets, saved models, and detailed README files.
 
-## Project Overview
+## Projects Included
 
-The Iris dataset contains flower measurements for three species:
+| No. | Project | Problem Type | Main Skill |
+|---|---|---|---|
+| 1 | Iris Flower Classifier | Classification | Logistic Regression pipeline |
+| 2 | Breast Cancer Diagnosis | Classification | Medical-style binary classification |
+| 3 | Diabetes Progression Predictor | Regression | Predicting numeric disease progression |
+| 4 | Wine Classifier | Classification | Multiclass model comparison |
+| 5 | Customer Churn Predictor | Classification | Synthetic business ML project |
 
-- Setosa
-- Versicolor
-- Virginica
+## How To Use
 
-The goal is to predict the species from four numeric features:
-
-- Sepal length
-- Sepal width
-- Petal length
-- Petal width
-
-## Features
-
-- Loads the built-in Iris dataset from scikit-learn
-- Splits data into training and test sets
-- Builds a preprocessing and model pipeline
-- Trains a Logistic Regression classifier
-- Prints accuracy and classification report
-- Saves the trained model as `iris_model.joblib`
-- Includes a separate prediction script
-
-## Technologies Used
-
-- Python
-- pandas
-- scikit-learn
-- joblib
-
-## Folder Structure
+Open any project folder inside `Projects/`, install its requirements, train the model, and run prediction.
 
 ```text
-03_ML_Iris_Classifier/
-├── train_model.py
-├── predict.py
-├── requirements.txt
-└── README.md
-```
-
-## How To Install
-
-```bash
+cd Projects/01_Iris_Flower_Classifier
 pip install -r requirements.txt
-```
-
-## How To Train
-
-```bash
 python train_model.py
-```
-
-This creates:
-
-```text
-iris_model.joblib
-```
-
-## How To Predict
-
-```bash
 python predict.py
-```
-
-## Example Prediction
-
-The prediction script uses this sample:
-
-```text
-sepal length = 5.1
-sepal width  = 3.5
-petal length = 1.4
-petal width  = 0.2
-```
-
-Expected output:
-
-```text
-Predicted species: setosa
 ```
 
 ## What You Learn
@@ -91,15 +29,22 @@ Predicted species: setosa
 - Splitting data into train and test sets
 - Building an ML pipeline
 - Scaling features
-- Training a classification model
+- Training classification and regression models
 - Evaluating accuracy, precision, recall, and F1 score
+- Evaluating MAE, RMSE, and R2 for regression
 - Saving and loading a trained model
 
-## Future Improvements
+## Tools Used
 
-- Try Random Forest and SVM
-- Add confusion matrix plot
-- Create a Streamlit web app
-- Add user input for custom flower measurements
-- Add a Jupyter notebook version
+- Python
+- pandas
+- scikit-learn
+- joblib
 
+## Next Improvements
+
+- Add Jupyter notebook versions
+- Add charts and confusion matrices
+- Add Streamlit web apps
+- Add model comparison tables
+- Add GitHub screenshots
